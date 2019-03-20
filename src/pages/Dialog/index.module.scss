@@ -1,0 +1,30 @@
+@import "../../common/common.scss";
+.dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .header {
+    @include header;
+  }
+  .main{
+    position: absolute;
+    top: 62px;
+    bottom: 80px;
+    width: 100%;
+    background-color: black;
+  }
+  .editBar{
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    .inputBar{
+      flex-grow: 2;
+    }
+  }
+}

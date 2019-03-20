@@ -1,0 +1,12 @@
+@import "../../common/common.scss";
+.contactCell{
+  @include cell;
+  .avatar{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+    margin: 0 14px;
+    background: no-repeat center;
+  }
+}

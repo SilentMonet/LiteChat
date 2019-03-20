@@ -1,0 +1,53 @@
+@import "../../common/common.scss";
+
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  .header {
+    @include header;
+  }
+  .main-container {
+    position: absolute;
+    top: 62px;
+    bottom: 72px;
+    width: 400vw;
+    white-space: nowrap;
+
+    font-size: 0;
+    overflow: hidden;
+    transition: transform 0ms ease 0ms;
+    will-change: transform;
+  }
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+    background-color: $lighter-background;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .tabTag {
+      height: 100%;
+      flex-grow: 1;
+      outline: none;
+      border: none;
+      background: transparent;
+      .icon {
+        height: 36px;
+        width: 36px;
+      }
+      .name {
+        height: 21px;
+        width: 31px;
+        line-height: 21px;
+      }
+    }
+  }
+}

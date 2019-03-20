@@ -1,0 +1,63 @@
+$primary-background: #ededed;
+$lighter-background: #f7f7f7;
+$dark-font-color: #181818;
+@mixin header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 62px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 0;
+  line-height: 32px;
+  .title {
+    display: inline-block;
+    margin: 0 21px;
+    font-size: 32px;
+    color: $dark-font-color;
+  }
+  .toolIcon {
+    float: right;
+    height: 32px;
+    width: 32px;
+    margin: 0 21px;
+  }
+}
+@mixin cell {
+  // height: 72px;
+  padding: 8px 0;
+  margin: 8px 0;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background: whitesmoke;
+  -webkit-tap-highlight-color: rgba($color: #000000, $alpha: 0.1);
+  .icon {
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    background:no-repeat center;
+  }
+  .name {
+    line-height: 30px;
+    white-space: nowrap;
+    flex-grow: 2;
+    text-overflow: ellipsis;
+    color: #353535;
+    margin: 10px;
+  }
+  .digest {
+    max-width: 8em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #acacac;
+    margin: 10px;
+  }
+  .arrow {
+    height: 16px;
+    margin: 10px;
+    color: #acacac;
+  }
+}

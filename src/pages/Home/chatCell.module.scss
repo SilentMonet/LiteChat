@@ -1,0 +1,6 @@
+@import "../../common/common.scss";
+.chatCell{
+  @include cell;
+  height: 80px;
+  background-color: burlywood;
+}

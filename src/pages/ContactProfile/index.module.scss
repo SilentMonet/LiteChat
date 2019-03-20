@@ -1,0 +1,39 @@
+@import "../../common/common.scss";
+.contactProfile{
+  .header{
+    @include header;
+  }
+  .container{
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden scroll;
+    .intrCell{
+      width: 100%;
+      margin: 8px 0;
+      padding: 8px 0;
+      background-color: beige;
+    }
+    .avatar{
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      margin: 8px;
+      background-color: aqua;
+      vertical-align: top;
+    }
+    .info{
+      display: inline-block;
+      margin:0 8px 0;
+      p{
+        margin: 8px 0 0;
+      }
+      .name{
+        font-size: 24px;
+        font-weight: bolder;
+      }
+    }
+  }
+}
